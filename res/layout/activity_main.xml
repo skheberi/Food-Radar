@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="510dp"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/openmaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show on Maps" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:background="#696969"
+        android:gravity="end"
+        android:text=" "
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/openmaps" >
+    </ListView>
+
+</RelativeLayout>
